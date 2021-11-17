@@ -1,0 +1,1346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+
+}
+/*---------Address-------*/
+
+.address{
+    padding-left: 500px;
+
+}
+.address {
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 16px; 
+    list-style: none;
+    display: flex;
+}
+
+.address i{
+    color: magenta;
+    padding-right: 20px;
+    padding-top: 15px;
+    
+}
+
+.number i{
+    color: magenta;
+    padding-right: 20px;
+    padding-top: 15px;
+    
+}
+.number{
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex; 
+    list-style: none;
+    margin: none;
+}
+
+.social_media a{
+    color: magenta;
+}
+
+@media only screen and (max-width: 600px) {
+    .address{
+        padding-left: 30px;
+    
+    }
+    .address {
+        color: midnightblue;
+        text-decoration: none;
+        font-size: 10px; 
+        list-style: none;
+        display: flex;
+    }
+    
+    .address i{
+        color: magenta;
+        padding-right: 5px;
+        padding-top: 5px;
+        
+    }
+    
+    .number i{
+        color: magenta;
+        padding-right: 20px;
+        padding-top: 15px;
+        
+    }
+    .number{
+        color: midnightblue;
+        text-decoration: none;
+        font-size: 10px;
+        display: flex; 
+        list-style: none;
+        margin: none;
+    }
+    
+    .social_media a{
+        color: magenta;
+        
+    }
+}
+
+
+/*-------Pre-container*/
+
+.pre-container{
+    background:midnightblue;
+    padding: 1px;
+}
+.pre-container ul li:hover::after{
+    width: 50px;
+}
+
+.pre-container a{
+    color: magenta;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 13px;
+
+}
+
+.pre-container ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+/*------About US-----*/
+
+.about-row{
+    display: flex;
+    width: 80%;
+    margin: 60px 100px;
+    color: midnightblue;
+   
+}
+    
+.miss h2{
+    text-align: justify;
+}
+
+.miss{
+    padding-left: 50px;
+}
+
+.about-miss{
+    color: midnightblue;
+    margin: 50px 50px;
+    text-align: center;
+}
+
+.miss-about{
+    display: flex;
+    width: 80%;
+   margin: 60px 150px;
+   padding-bottom: 50px;
+}
+
+.miss-about img{
+    padding-right: 50px;
+    width: 500px;
+    height: 40vh;
+}
+
+.about-us h3{
+    color: magenta;
+    text-transform: uppercase;
+}
+
+.about-us p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+.miss-fls{
+    display: flex;
+    width: 80%;
+    margin: 60px 150px;
+    padding-bottom: 50px;
+}
+
+.miss-fls img{
+    padding-right: 50px;
+    width: 100%;
+    height: 45vh;
+}
+
+.about-fls p{
+    line-height: 25px;
+    text-align: justify;
+}
+.about-fls h3{
+    color: magenta;
+    text-transform: uppercase;
+}
+
+.opening_hours{
+    padding: 40px 20px 20px;
+    background-color:midnightblue;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 10px 50px;
+    width: 100%;
+    list-style:inside;
+}
+
+.opening_hours h2{
+    text-align: center;
+    color: white;
+}
+
+.opening_hours p{
+    text-align: center;
+    padding-top: 2px;
+    color: magenta;
+    
+}
+
+/*--------Container------*/
+    
+.slider{
+min-height:70vh;
+width: 100%;
+background-image: url(images/med_bann.jpg);
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+backface-visibility: hidden;
+animation: slideBg 10s infinite 10s;
+
+}
+
+@keyframes slideBg{
+    0%{
+        background-image: url(images/DR.\ SHITTA\ BEY.JPG);
+        background-position: top;
+    }
+    25%{
+        background-image: url(images/OB_GYN.jpg);
+        background-position: top;
+    }
+    50%{
+        background-image: url(images/steth.jpg);
+        background-position: top;
+    }
+    75%{
+        background-image: url(images/NEW\ BORN.jpg);
+        background-position: top;
+    }
+    100%{
+        background-image: url(images/logo.png);
+        background-position: top;
+    }
+
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+   
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 13px;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;  
+}
+
+.nav-links ul li:hover{
+    background:midnightblue;
+    border-radius: 10px;
+
+}
+.about_menu{
+    display:none;
+}
+
+.nav-links ul li:hover .about_menu{
+    display: block;
+    position: absolute;
+    background:midnightblue;
+    z-index: 1;
+    top:100%;
+}
+
+.nav-links ul li:hover .about_menu ul{
+    display: block;
+    margin: 10px; 
+}
+.nav-links ul li:hover .about_menu ul li{
+    width:100px;
+    padding:10px;
+    border-bottom: 1px double magenta;
+    background:transparent;
+    border-radius: 0;
+    text-align:left;
+    position:relative;
+}
+.nav-links ul li:hover .about_menu ul li:last-child{
+    border-bottom: none;
+}
+
+.sub_menu{
+    display:none;
+    
+}
+.nav-links ul li:hover .sub_menu{
+    display:block;
+    position: absolute;
+    background: midnightblue;
+    z-index: 1;
+    top: 100%;
+}
+
+.nav-links ul li:hover .sub_menu ul{
+    display: block;
+    margin: 10px;
+
+}
+.nav-links ul li:hover .sub_menu ul li{
+    width:100px;
+    padding:10px;
+    border-bottom: 1px double magenta;
+    background:transparent;
+    border-radius: 0;
+    text-align:left;
+    position:relative;
+   
+}
+
+.nav-links ul li:hover .sub_menu ul li:last-child{
+    border-bottom: none;
+}
+
+.gyne_menu{
+    display:none;
+}
+
+.sub_menu ul li:hover .gyne_menu{
+    display: block;
+    position: absolute;
+    background: midnightblue;
+    z-index: 1;
+    top: 0;
+    left:100%;
+}
+
+.sub_menu ul li:hover .gyne_menu ul{
+    display: block;
+    margin: 10px;
+}
+.sub_menu ul li:hover .gyne_menu ul li{
+    width:100px;
+    padding:10px;
+    border-bottom: 1px double magenta;
+    background:transparent;
+    border-radius: 0;
+    text-align:left;
+    position:relative;
+}
+
+.mis_menu{
+    display:none;
+}
+.sub_menu ul li:hover .mis_menu{
+    display:block;
+    position:absolute;
+    background:midnightblue;
+    left:100%;
+    top: 0;
+    z-index:1;
+    transition: 0.3s;
+}
+
+.sub_menu ul li:hover .mis_menu ul{
+    display: block;
+    margin:10px;
+}
+.sub_menu ul li:hover .mis_menu ul li{
+    width:100px;
+    padding:10px;
+    border-bottom: 1px double magenta;
+    background:transparent;
+    border-radius: 0;
+    text-align:left;
+    position:relative;
+    
+}
+.text-box{
+    width: 90%;
+    color: midnightblue;
+    position:absolute;
+    top:60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align:left;
+}
+
+
+.text-box h2{
+    font-size: 45px;
+    
+}
+.gyne-btn{
+    display: inline-block;
+    text-decoration:none;
+    color: magenta;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.gyne-btn:hover{
+    border: 1px solid midnightblue;
+    background: midnightblue;
+    transition: 1s;
+}
+
+
+
+/*-------OB/GYN SERVICES---------*/
+
+.miss-gyn{
+    display: flex;
+    width: 90%;
+}
+.miss-ob-gyn h3{
+    color: midnightblue;
+   
+}
+.miss-ob-gyn{
+    padding-top: 60px;
+    text-align: justify;
+}
+.miss-ob-gyn p{
+    line-height: 45px;
+    text-align: justify;
+}
+.ob-gyn img{
+    padding: 5px 120px;
+}
+
+.miss-ob-gyn{
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    margin-top: 100px;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    color: midnightblue;
+    text-align: justify;
+    transition: 1s;  
+}
+@media only screen and (max-width: 700px){
+    .miss-gyn{
+        display: inline-block;
+        width: 90%;
+    }
+    .miss-ob-gyn h3{
+        color: midnightblue;
+   
+    }
+    .miss-ob-gyn{
+        padding-top: 60px;
+
+
+    }
+    .miss-ob-gyn p{
+        line-height: 30px;
+        text-align: justify;
+        padding: 10px 20px;
+        font-size :13px;  
+        margin-left: 10px;      
+    }
+    .ob-gyn img{
+        padding: 5px 10px;
+        width: 300px;
+        height: 300px;
+    }
+    .miss-ob-gyn h3{
+        color: white;
+    }
+    .miss-ob-gyn{
+        background-color: midnightblue;
+        margin-left: 20px; 
+        border-radius: 20px;
+        margin-bottom: 1%;
+        margin-top: 1px;
+        padding: 12px 12px;
+        box-sizing: border-box;
+        color: white;
+        text-align: left;
+        transition: 1s;  
+    }
+}
+
+
+/*----------Services-------*/
+.miss-column{
+    display: flex;
+    width: 30%;
+    margin-top: 3px;
+    margin-left: 120px;
+    text-align: left;
+    width: 90%;
+    flex-basis: 31%;
+    
+}
+.column h3{
+    text-align: center;
+    font-weight: bold;
+    color: midnightblue;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    padding-left: 1px;
+    margin-top: 50px;
+}
+
+.column h3::after{
+    content: '';
+    background:magenta;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 5px;
+   
+}
+
+.services-col{
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 2px 12px;
+    box-sizing: border-box;
+    color: midnightblue;
+    text-align: left;
+    transition: 1s;
+    font-size: 14px;
+}
+
+
+.services-col a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: magenta;
+}
+
+@media only screen and (max-width: 700px) {
+    .miss-column{
+        display: inline-block;
+        width: 5%;
+        margin-top: 3px;
+        margin-left: 36px;
+        text-align: left;
+        width: 90%;
+        flex-basis: 31%;
+    
+    }
+
+    .column h3{
+        text-align: center;
+        font-weight: bold;
+        color: midnightblue;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        padding-left: 1px;
+        margin-top: 50px;
+    }
+
+    .column h3::after{
+        content: '';
+        background:magenta;
+        display: block;
+        height: 3px;
+        width: 100px;
+        margin: 10px auto 5px;
+   
+    }
+
+    .services-col{
+        flex-basis: 31%;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 1%;
+        padding: 2px 12px;
+        box-sizing: border-box;
+        color: midnightblue;
+        text-align: left;
+        transition: 1s;
+        font-size: 14px;
+    }
+
+
+    .services-col a{
+        text-decoration: none;
+        transition: 0.5s;
+        color: magenta;
+    }
+    .services-col img{
+        width: 250px;
+        height: 200px;
+    }
+    .services-col p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+        text-align: justify; 
+    }
+
+}
+
+/*--------Contact page----*/
+
+.contact-us{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box{
+    background: white;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px  80px;
+    background: lightskyblue; 
+   
+}
+.contact-right{
+    flex-basis: 30%;
+    padding: 40px;
+    background:midnightblue;
+    color:white;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+.contact-us p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; 
+}
+
+.input-group .input-row{
+    flex-basis: 45%;
+  
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid White;
+    outline: none;
+    
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+    color: midnightblue;
+    
+}
+button{
+    background: midnightblue;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(26,0,182,0.3);
+}
+
+.contact-left h3{
+    color: midnightblue;
+    font-weight: 600;
+    margin-bottom:30px;
+
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom:30px;
+}
+
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top:20px;
+}
+
+input{
+    width:100%;
+    height: 30px;
+    padding-top: 10px;
+}
+
+label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: midnightblue;
+}
+
+button{
+    background: midnightblue;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(26,0,182,0.3);
+    
+}
+button:hover{
+    transition:0.3s;
+    color: magenta;
+}
+
+
+
+/*---------Testimonials-------*/
+.hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero h2{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+    color: midnightblue;
+
+}
+
+.hero h2::after{
+    content: '';
+    background:magenta;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 5px;
+   
+}
+
+.hero h4{
+    text-align: center;
+    color: midnightblue;
+    
+}
+.slide-row{
+    display: flex;
+    width: 3200px;
+    transition: 0.5s;
+  
+}
+
+.slide-col{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.user-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.user-text{
+    background: midnightblue;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: white;
+    padding: 35px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+   
+.user-text p{
+    font-size: 13px;
+    line-height: 19px;
+    text-align: justify;
+}
+
+.user-text h3{
+    margin: 35px 0 5px;
+    color: lightskyblue;
+    font-size: 13px;
+    text-align: center;
+    
+}
+.contain{
+    width : 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.indicator{
+    position : absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom : -50px;
+
+}
+
+.btn{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    border-radius: 15px;
+    background: magenta;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active{
+    width: 30px;
+}
+
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .hero{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
+    
+    .hero h2{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 20px;
+        color: midnightblue;
+    
+    }
+    
+    .hero h2::after{
+        content: '';
+        background:magenta;
+        display: block;
+        height: 3px;
+        width: 100px;
+        margin: 10px auto 5px;
+       
+    }
+    
+    .hero h4{
+        text-align: center;
+        color: midnightblue;
+        
+    }
+    .slide-row{
+        display: flex;
+        width: 3200px;
+        transition: 0.5s;
+      
+    }
+    
+    .slide-col{
+        width: 600px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .user-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60%;
+    }
+    
+    .user-img img{
+        height: 100%;
+        border-radius: 10px;
+        
+    }
+    
+    .user-text{
+        background: white;
+        width: 400px;
+        height: 250px;
+        position: absolute;
+        left: 35%;
+        top: 50%;
+        transform: translateY(-20%);
+        border-radius: 10px;
+        color: midnightblue;
+        padding: 35px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+       
+    .user-text p{
+        font-size: 11px;
+        line-height: 19px;
+        text-align: justify;
+    }
+    
+    .user-text h3{
+        margin: 35px 0 5px;
+        color: lightskyblue;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+    .contain{
+        width : 800px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .indicator{
+        position : absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom : -50px;
+    
+    }
+    
+    .btn{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin: 4px;
+        border-radius: 15px;
+        background: magenta;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .active{
+        width: 30px;
+    }
+    
+    .testimonial{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+ /*--------Footer--------*/
+
+.footer{
+    background-image: url(images/foot_image.png);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    position: relative;
+
+}
+.footer-bottom{
+    background: magenta;
+    color: midnightblue;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+
+.footer .footer-content{
+    border: 1px solid white;
+    height: 400px;
+}
+.footer-content{
+    display: flex; 
+    padding: 40px 40px;
+    
+}
+.footer-left{
+    flex-basis: 40%;
+    padding: 10px  20px;
+}
+
+.footer-left p{
+    line-height: 30px;
+}
+.content_footer i{
+    color: white;
+    width: 20px;
+    margin-top: 20px;
+
+}
+
+.footer-right{
+    display: flex; 
+    line-height: 40px;
+    padding-left: 50px;
+}
+
+.footer-right h2{
+    color: magenta;
+    
+}
+.footer-right h3{
+    color: magenta;
+}
+.footer-right ul li{
+    list-style: none;
+}
+.footer li{
+    list-style: none;
+  
+}
+.footer-right a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer{
+        background-image: url(images/foot_image.png);
+        width: 100%;
+        height: 150vh;
+        background-size: cover;
+        background-position: top;
+        color: white;
+        position: relative;
+    
+    }
+    .footer-bottom{
+        background: magenta;
+        color: midnightblue;
+        height: 30px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 20px;
+    }
+    
+    .footer .footer-content{
+        border: 1px solid white;
+        height: 400px;
+    }
+
+    .footer-content{
+        display: inline-block; 
+        padding: 40px 40px;
+        
+    }
+    .footer-left{
+        flex-basis: 40%;
+        padding: 10px  20px;
+    }
+    
+    .footer-left p{
+        line-height: 20px;
+        font-size: 12px;
+        text-align: center;
+
+    }
+    .content_footer i{
+        color: white;
+        width: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+        flex-basis: 10px;
+    }
+    
+    .footer-right{
+        display: inline-block; 
+        line-height: 30px;
+        padding-left: 50px;
+        
+    }
+    
+    .footer-right h2{
+        color: magenta;
+        font-size: 17px;
+        text-align: center;
+        
+    }
+    .footer-right h3{
+        color: magenta;
+        font-size: 17px;
+        text-align: center;
+    }
+    .footer-right ul li{
+        list-style: none;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+    .footer li{
+        list-style: none;
+      
+    }
+    .footer-right a{
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+
+/*-----Abdominal Hysterectomy*/
+
+.abdominal-contact{
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.abdominal-contact a{
+    text-decoration: none;
+    color: magenta;
+}
+
+.a-wrapper{
+    display: flex;
+    margin: 50px 100px;
+    
+}
+.profile-wrapper{
+    padding: 20px;
+    margin-top: 0;
+    text-align: justify;
+    line-height: 27px;
+
+}
+.profile-wrapper p{
+    color: midnightblue;
+    
+}
+.profile-wrapper h2{
+    color: magenta;
+    text-transform: uppercase;
+}
+
+.profile-wrapper h3{
+    color: magenta;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .abdominal-contact{
+        text-align: center;
+        font-size: 10px;
+        
+    }
+    
+    .abdominal-contact a{
+        text-decoration: none;
+        color: magenta;
+    }
+    
+    .a-wrapper{
+        display: inline-block;
+        margin: 10px 20px;
+        
+    }
+    .profile-wrapper{
+        padding: 5px;
+        margin-top: 0;
+        text-align: justify;
+        line-height: 27px;
+    
+    }
+    .profile-wrapper p{
+        color: midnightblue;
+        
+    }
+    .profile-wrapper h2{
+        color: magenta;
+        text-transform: uppercase;
+    }
+    
+    .profile-wrapper h3{
+        color: magenta;
+        text-transform: uppercase;
+    }
+    .profile-image-wrapper img{
+        width: 300px;
+        height: 200px;
+    }
+}    
+
+/*-----------Our Director------*/
+
+
+.about-director{
+    display: flex;
+    width: 80%;
+   margin: 60px 150px;
+   padding-bottom: 50px;
+}
+
+.about-director img{
+    padding-right: 50px;
+    width: 700px;
+    height: 70vh;
+}
+
+.director-miss h3{
+    color: magenta;
+}
+
+.director-miss p{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 14px;
+}
+.director h4{
+    text-align: center;
+    font-weight: bold;
+    color: midnightblue;
+    margin: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.director h4::after{
+    content: '';
+    background:magenta;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 5px;
+
+}
+
+
+.team{
+    background: whitesmoke;
+}
+.team h2{
+    text-align: center;
+    font-weight: bold;
+    color: midnightblue;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.team h2::after{
+    content: '';
+    background:magenta;
+    display: block;
+    height: 3px;
+    width: 100px;
+    margin: 10px auto 5px;
+}
+
+
+.staff{
+    display: flex; 
+    padding: 10px 120px;
+    
+}
+
+.staff-two{
+    display: flex; 
+    padding: 40px 120px;
+}
+
+.staff img{
+    padding: 60px 40px;
+    padding-bottom: 2px;
+    
+}
+
+.staff h4, h5{
+    color: magenta;
+    text-align: center;
+
+}
+
+.staff-two img{
+    padding: 60px 100px;
+    padding-bottom: 2px;
+
+}
+
+.staff-two h4, h5{
+    color: magenta;
+    text-align: center;
+}
+
+
+.online-menu{
+    padding: 40px 80px;
+    color: magenta;
+    display: flex;
+}
+.online-menu i{
+    padding-right: 20px;
+}
+
+.input-appoint{
+    padding: 5px 80px;
+}
